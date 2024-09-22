@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="auto">
   <head>
     <script src="../assets/js/color-modes.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>打磚塊遊戲</title>
     <link
       rel="canonical"
@@ -21,16 +22,6 @@
     />
     <!-- Custom styles for this template -->
     <link href="sidebars.css" rel="stylesheet" />
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-      #myCanvas {
-        background-color: black;
-      }
-    </style>
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -76,13 +67,12 @@
     </svg>
 
     <main class="d-flex flex-nowrap float-end">
-      <canvas id="myCanvas" width="1000px" height="600px"></canvas>
       <div
         class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark b-example-vr"
         style="width: 280px"
       >
         <a
-          href="./index.html"
+          href="/"
           class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
         >
           <span class="fs-4">打磚塊遊戲</span>
@@ -90,7 +80,7 @@
         <hr />
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">
+            <a href="./index.html" class="nav-link text-white">
               <svg class="bi pe-none me-2" width="16" height="16">
                 <use xlink:href="#home" />
               </svg>
@@ -98,7 +88,7 @@
             </a>
           </li>
           <li>
-            <a href="./about.html" class="nav-link text-white">
+            <a href="#" class="nav-link active" aria-current="page">
               <svg class="bi pe-none me-2" width="16" height="16">
                 <use xlink:href="#people-circle" />
               </svg>
@@ -108,13 +98,34 @@
         </ul>
       </div>
     </main>
-
+    <div class="ps-3 pt-2 bg-light rounded-3">
+      <div class="container-fluid py-3">
+        <h1 class="display-5 fw-bold fs-2">Project 6 - 打磚塊遊戲</h1>
+        <p class="col-md-8 fs-4 mb-2">
+          Project6的練習包括使用css美化外觀、製作遊戲動畫以及使用JavaScript實現遊戲操作邏輯。
+        </p>
+        <a
+          href="https://github.com/james-chiou/breakout-clone"
+          target="_blank"
+          rel="noreferrer noopenner"
+          class="btn btn-primary btn-lg"
+          >Github</a
+        >
+      </div>
+    </div>
+    <div class="ps-3 pt-2 bg-light rounded-3">
+      <div class="container-fluid py-3">
+        <h1 class="display-5 fw-bold fs-2">聯絡方式</h1>
+        <p class="col-md-8 fs-4 mb-0">作者: 邱泓叡</p>
+        <p class="col-md-8 fs-4 mt-0">信箱: hongjuichiou.james@gmail.com</p>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
     <script src="sidebars.js"></script>
-    <script src="./app.js"></script>
   </body>
 </html>

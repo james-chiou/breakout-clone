@@ -99,7 +99,7 @@ for (let i = 0; i < 10; i++) {
 // 移動地板
 c.addEventListener("mousemove", (e) => {
   ground_x = e.clientX;
-  while (ground_x + 200 > canvasWidth) {
+  while (ground_x + 200 >= canvasWidth) {
     ground_x = 800;
     return;
   }
